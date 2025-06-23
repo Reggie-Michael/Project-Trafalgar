@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000&display=swap");
+
 /* Reset */
 * {
   margin: 0;
@@ -6,11 +8,12 @@
   text-decoration: none;
   list-style: none;
   color: #000;
+  font-family: "Mulish", sans-serif;
+  font-style: normal;
 }
 
 /* .container {
 } */
-
 
 /* Landing page */
 .landing-page {
