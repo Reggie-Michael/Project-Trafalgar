@@ -18,7 +18,7 @@
 /* Landing page */
 .landing-page {
   padding: 1rem 0;
-  height: 100vh;
+  height: 95vh;
 }
 
 /* Header */
@@ -70,7 +70,7 @@ header nav ul li:first-child a {
 .landing-page .landing-content {
   display: flex;
   padding: 3rem 10%;
-  height: 70%;
+  height: 80%;
   align-items: center;
   justify-content: space-between;
   gap: 1rem;
@@ -112,4 +112,137 @@ header nav ul li:first-child a {
   height: 100%;
   object-fit: contain;
   border-radius: 1rem;
+}
+
+/* Services */
+
+section.services {
+  padding: 3rem 10%;
+  text-align: center;
+}
+
+.services h2 {
+  font-size: 2rem;
+  margin-bottom: 3.5rem;
+  position: relative;
+}
+
+.services h2::after {
+  content: "";
+  position: absolute;
+  width: 50px;
+  height: 2px;
+  background-color: #000;
+  bottom: -20px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.services > p {
+  font-size: 1.1rem;
+  font-weight: 300;
+  max-width: 90%;
+  margin: 0 auto 2rem;
+}
+
+/* Services Card */
+.services .card-box {
+  display: grid;
+  margin: 7rem 0 3rem;
+  grid-template-columns: repeat(3, minmax(140px, 1fr));
+  grid-template-rows: repeat(2, minmax(300px, 1fr));
+  gap: 0.7rem;
+  text-align: start;
+}
+
+.services .card-box .card {
+  padding: 1.5rem;
+  border-radius: 0.5rem;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.services .card-box .card img {
+  /* width: 100%; */
+  height: 70px;
+  object-fit: cover;
+  margin-bottom: 1rem;
+}
+
+.services .card-box .card h3 {
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+.services .card-box .card p {
+  font-size: 1rem;
+  color: #00000080;
+  font-weight: 300;
+  max-width: 90%;
+}
+
+button.learn-more {
+  padding: 0.5rem 2rem;
+  color: #458ff6;
+  background: transparent;
+  border: 1px solid #458ff6;
+  border-radius: 2rem;
+  cursor: pointer;
+}
+
+/* About */
+section.about {
+  margin: 5rem 0;
+  padding: 3rem 7.5%;
+}
+
+.about .detail {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 2rem;
+  margin-bottom: 7rem;
+  height: 400px;
+}
+
+.about .detail.detail-2 {
+  flex-direction: row-reverse;
+}
+
+.about .detail .image-con {
+  flex: 1;
+  height: 100%;
+}
+
+.about .detail .image-con img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.about .detail .text {
+  padding-left: 3rem;
+  width: 40%;
+}
+
+.about .detail .text h2 {
+  font-size: 2rem;
+  margin-bottom: 3rem;
+  position: relative;
+}
+
+.about .detail .text h2::after {
+  content: "";
+  position: absolute;
+  width: 50px;
+  height: 2px;
+  background-color: #000;
+  bottom: -10px;
+  left: 0;
+}
+
+.about .detail .text p {
+  font-size: 1rem;
+  color: #00000080;
+  font-weight: 300;
+  margin-bottom: 1.5rem;
+  max-width: 90%;
 }
